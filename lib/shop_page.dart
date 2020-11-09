@@ -57,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),
                       ),
-                      child: const Text('戻る'),
+                      child: const Text('back'),
                     ),
                   ),
                   const SizedBox(width: 8),
