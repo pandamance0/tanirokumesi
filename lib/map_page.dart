@@ -19,7 +19,7 @@ class TopPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: RaisedButton(
-          child: Text('テスト遷移'),
+          child: Text('遷移'),
           onPressed: (){
             Navigator.push(
               context,

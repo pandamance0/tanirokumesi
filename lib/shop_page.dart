@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:tanirokumesi_app/map_page.dart';
 import 'package:tanirokumesi_app/event_page.dart';
 
+import 'package:dots_indicator/dots_indicator.dart';
+
 void main() {
   runApp(ShopPage());
 }
@@ -26,6 +28,10 @@ class HomeScreen extends StatefulWidget {
 }
 class _HomeScreenState extends State<HomeScreen> {
   PageController _controller;
+
+  final pageLength = 3;
+  double currentIndexPage = 1;
+
   @override
   void initState() {
     super.initState();
@@ -101,6 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         'https://i.gyazo.com/750daea40962abdcd5a73db4d630dfdc.jpg',
                         fit: BoxFit.cover,
                       ),
+                      DotsIndicator(
+                          dotsCount: pageLength,
+                          position: currentIndexPage
+                      )
                     ],
                   ),
                 ),
