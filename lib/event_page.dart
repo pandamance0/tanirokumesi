@@ -95,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(
               child: Padding(
                 padding: const EdgeInsets.only(
-                  top: 25,
+                  top: 1,
                   left: 5,
                   right: 5,
                   bottom: 5,
@@ -269,7 +269,7 @@ class _Ticket extends StatelessWidget {
 
     return Container(
       width: double.infinity,
-      height: 120,
+      height: 70,
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: _TicketShapeBorder(width: 1, radius: 20.0),

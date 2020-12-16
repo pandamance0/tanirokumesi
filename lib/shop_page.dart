@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tanirokumesi_app/map_page.dart';
 import 'package:tanirokumesi_app/event_page.dart';
 
-import 'package:dots_indicator/dots_indicator.dart';
-
 void main() {
   runApp(ShopPage());
 }
@@ -13,30 +11,25 @@ class ShopPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
       home: HomeScreen(),
     );
   }
 }
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
+
 class _HomeScreenState extends State<HomeScreen> {
   PageController _controller;
 
-  final pageLength = 3;
-  double currentIndexPage = 1;
-
-  @override
+    @override
   void initState() {
     super.initState();
     _controller = PageController();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,6 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             // 画像
+
             Column(
               children: <Widget>[
                 Container(
@@ -107,10 +101,6 @@ class _HomeScreenState extends State<HomeScreen> {
                         'https://i.gyazo.com/750daea40962abdcd5a73db4d630dfdc.jpg',
                         fit: BoxFit.cover,
                       ),
-                      DotsIndicator(
-                          dotsCount: pageLength,
-                          position: currentIndexPage
-                      )
                     ],
                   ),
                 ),
@@ -118,7 +108,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             // メニュー
             Container(
-              margin: const EdgeInsets.all(8),
+              margin: const EdgeInsets.all(1),
               width: double.infinity,
               child: OutlineButton(
                 onPressed: () {
@@ -145,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 margin: const EdgeInsets.only(
                   top:10,
-                  bottom: 200,
+                  bottom: 100,
                   right: 10,
                   left: 10,
                 ),

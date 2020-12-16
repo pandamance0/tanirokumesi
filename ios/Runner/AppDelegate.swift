@@ -1,5 +1,6 @@
 import UIKit
 import Flutter
+import GoogleMaps // ★1206追加
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
