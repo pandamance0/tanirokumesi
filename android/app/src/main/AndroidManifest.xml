@@ -9,7 +9,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="tanirokumesi_app"
         android:icon="@mipmap/ic_launcher">
-        <meta-data android:name="com.google.android.geo.API_KEY"  android:value="XXXXXXXXXXXXXXXXXXXXXXX"/> <!-- ★12/06追加 -->
+        <meta-data android:name="com.google.android.geo.AIzaSyDI7eQOedjfGzkHhyWPoJjnoCOHDDmW4z4"  android:value="AIzaSyDI7eQOedjfGzkHhyWPoJjnoCOHDDmW4z4"/> <!-- ★12/018追加 -->
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
